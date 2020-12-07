@@ -11,3 +11,7 @@ DEVICE_PATH := device/samsung/gta4xlwifi
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-lineage
+    
+GAPPS_VARIANT := pico
+ 
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
